@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className={(typeof weather.main != 'undefined')
-    ? (((weather.main.temp-273) > 20)
+    ? (((weather.main.temp-273) < 20)
     ? 'App' : 'App warm') //dibandingkan
     : 'App warm' //else
     }>
